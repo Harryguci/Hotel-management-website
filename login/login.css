@@ -1,0 +1,120 @@
+::selection {
+  background-color: rgb(250, 100, 100);
+  color: white;
+}
+body {
+  font-family: 'Rubik';
+}
+
+section .sub-heading {
+  font-size: 16px;
+  display: flex;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: rgb(150, 150, 150);
+}
+
+section .sub-heading::after {
+  content: "";
+  height: 1px;
+  background-color: rgb(150, 150, 150);
+  width: 100px;
+  margin: auto 10px;
+}
+
+section .heading {
+  font-size: 45px;
+  margin: 20px 0 0 0;
+}
+main {
+  background: rgb(250, 250, 250);
+  min-height: 90vh;
+  padding-bottom: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* LOGIN FRAME */
+.frame {
+  display: display;
+  width: fit-content;
+  min-width: 600px;
+  padding: 50px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+/*.frame.show {
+    display: block;
+} */
+.frame h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.frame .button-change-1 {
+  cursor: pointer;
+  font-size: 14px;
+  background: none;
+  padding: 5px 20px;
+  margin: 10px 0 0 0;
+  display: block;
+  text-transform: uppercase;
+  width: fit-content;
+  border: 1px solid rgb(150, 150, 150);
+  letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+}
+.frame .button-change-1:hover {
+  color: white;
+  background-color: #fc3c3c;
+}
+.frame hr {
+  margin: 30px 0;
+}
+.frame__inner form {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-bottom: 40px;
+}
+.frame__inner form span {
+  display: block;
+  width: 30%;
+  margin: auto 0;
+}
+.frame__inner form input {
+  width: 70%;
+  border: 1px rgb(150, 150, 150) solid;
+  border-radius: 0;
+  padding: 10px;
+  margin: 0 0 0 10px;
+}
+.frame__inner form input:focus {
+  outline-color: red;
+}
+.frame__inner:has(.form input:focus) span {
+  color: red;
+}
+.frame .btn-1 {
+  display: block;
+  position: relative;
+  background-color: #fc3c3c;
+  color: white;
+  border: #fc3c3c 2px solid;
+  padding: 10px 20px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.frame .btn-1:hover {
+  background: none;
+  border: #fc3c3c 2px solid;
+  color: #fc3c3c;
+}
+/* END OF LOGIN FRAME */
+
+@media only screen and (max-width: 600px) {
+  .frame {
+    width: 100%;
+    min-width: 0;
+    padding: 40px 20px;
+  }
+}

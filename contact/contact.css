@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: rubik;
+}
+footer{
+    margin-top: 10px;
+}
+.wrap {
+    background-image: url(./images/pic1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    margin-top: 10px;
+}
+
+.wrap .head {
+    text-align: center;
+
+}
+
+.wrap .head h1 {
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    font-size: 100px;
+    color: white;
+    font-weight: 500;
+}
+
+.wrap .head p {
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+/* PHAN RED BOX */
+.container .container_infor {
+    position: absolute;
+    left: 70px;
+    background-color: red;
+    height: 420px;
+    width: 330px;
+    top: 32px;
+    z-index: 1;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(240, 227, 227);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+/* phan thong tin  */
+.container_infor .infor li {
+    font-size: 17px;
+    color: white;
+    opacity: 0.5;
+    padding: 8px 40px;
+    transition: 0.3s;
+
+}
+
+.container_infor .infor li:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* phan icon */
+.container_infor .icon {
+    font-size: 35px;
+    display: flex;
+    margin-top: 45px;
+    padding-left: 47px;
+
+}
+
+.container_infor .icon i {
+    padding: 10px;
+    color: white;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.icon i:hover {
+    opacity: 1;
+
+}
+
+/* PHAN WHITEBOX */
+.container .container-form {
+    position: absolute;
+    height: 470px;
+    width: 80%;
+    top: 5px;
+    right: 30px;
+    padding-left: 200px;
+    margin-left: 350px;
+    background-color: whitesmoke;
+}
+
+.container .container-form h2 {
+    padding: 20px 200px;
+    font-size: 35px;
+    color: rgb(94, 91, 91);
+}
+
+/* phan dien thong tin  */
+.container .container-form .formbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* phan dien ho ten  */
+.formbox .box1 {
+    position: relative;
+    width: 50%;
+    padding-top: 20px;
+
+}
+
+.formbox .box1 span {
+    position: absolute;
+    left: 10px;
+    top: 26px;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.formbox .box1 input {
+    width: 400px;
+    height: 35px;
+}
+
+/* dien loi nhan  */
+.formbox .box2 {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.formbox .box2 textarea {
+    width: 97%;
+    height: 120px;
+}
+
+.formbox .box2 span {
+    position: absolute;
+    left: 10px;
+    top: 26px;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+/* nut send */
+.formbox .box3 {
+    padding: 20px;
+}
+
+.formbox .box3 input {
+    padding: 13px 33px;
+    color: white;
+    background: #0f3959;
+    margin: 0 auto;
+    font-weight: 700;
+
+}
+
+.box3 input:hover {
+    cursor: pointer;
+    background-color: rgb(239, 83, 83);
+    border: none;
+}
+
+.box3 input:focus {
+    background-color: red;
+    border: none;
+}
+
+.box1 input:focus~span,
+.box2 textarea:focus~span,
+.box1 input:valid~span,
+.box2 textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    color: #ff568c;
+    left: 0;
+}
+
+.box1 input:focus,
+.box2 textarea:focus {
+    border: 1px rgb(215, 38, 38) solid;
+    outline: none;
+}
