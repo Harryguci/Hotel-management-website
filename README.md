@@ -1,2 +1,2 @@
 # LUXURY HOTEL
-<a href="https://coder21082003.github.io/Nhom1/home/index.html" alt="home page">https://coder21082003.github.io/Nhom1/home/index.html</a>
+<a href="https://Harryguci.github.io/Hotel-management-website/home/index.html" alt="home page">https://Harryguci.github.io/Hotel-management-website/home/index.html</a>
