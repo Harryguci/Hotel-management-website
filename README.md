@@ -1,7 +1,7 @@
 # LUXURY HOTEL
 
 <p>An School Frontend Project has built using simple HTML, CSS, Javascript.</p>
-<a href="https://harryguci.github.io/Hotel-management-website/home/index.html" alt="home page">https://coder21082003.github.io/Nhom1/home/index.html</a>
+<a href="https://harryguci.github.io/Hotel-management-website/home/index.html" alt="home page">https://harryguci.github.io/Hotel-management-website/home/index.html</a>
 
 # Technology Used
 
